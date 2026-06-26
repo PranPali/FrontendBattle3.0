@@ -3,13 +3,13 @@
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 **[View Deployment →](frontend-battle3-0.vercel.app)**
 
 ---
 
-## 🧠 What This Is
+##  What This Is
 
 A high-converting, fully responsive landing page for an AI-driven data automation platform — engineered to pass both human design review and Chrome DevTools performance inspection simultaneously.
 
@@ -40,7 +40,7 @@ Zero external component libraries used. No Radix, no Headless UI, no Framer Moti
 
 ---
 
-## 🎨 Design System
+##  Design System
 
 ### Color Palette
 | Name | Hex |
@@ -131,17 +131,6 @@ npm run dev
 
 ---
 
-## 🚫 What's Intentionally Absent
-
-| Banned | Reason |
-|--------|--------|
-| Framer Motion | Runtime animation engine — forbidden by spec |
-| Radix / Headless UI / Shadcn | Pre-built component libraries — forbidden for Feature 2 |
-| Hardcoded price strings | All values derived from `computePrice()` matrix |
-| Global re-renders on toggle | State isolated to text node DOM mutation only |
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -165,18 +154,5 @@ npm run dev
 └── README.md
 ```
 
----
-
-## 🏆 Hackathon Scoring
-
-| Criterion | Points |
-|-----------|--------|
-| Pricing matrix logic + state isolation | 30 |
-| Bento-to-Accordion + zero-dependency rule | 10 |
-| Semantic DOM structure | 15 |
-| SEO hygiene & metadata | 10 |
-| Loading performance (≤500ms) | 5 |
-| Asset compliance & design polish | 15 |
-| Breakpoint fluidity | 10 |
 | Motion accuracy | 5 |
 | **Total** | **100** |
