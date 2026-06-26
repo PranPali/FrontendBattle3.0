@@ -5,7 +5,7 @@
 
 ##  Live Demo
 
-**[View Deployment →](frontend-battle3-0.vercel.app)**
+**[View Deployment →]frontend-battle3-0.vercel.app**
 
 ---
 
