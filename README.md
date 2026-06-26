@@ -3,9 +3,9 @@
 
 ---
 
-##  Live Demo
 
-**[View Deployment →]frontend-battle3-0.vercel.app**
+
+**Link:**https://frontend-battle3-0.vercel.app/
 
 ---
 
