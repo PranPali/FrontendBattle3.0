@@ -1,0 +1,6 @@
+{
+  "name": "NexaFlow",
+  "description": "High-performance AI data automation platform. Precision orchestration engine for modern enterprise data workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

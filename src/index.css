@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+:root {
+  --color-arctic-powder:    #F1F6F4; /* Light background base */
+  --color-mystic-mint:      #D9E8E2; /* Secondary surface / card backgrounds */
+  --color-forsythia:        #FFC801; /* Primary accent / CTA highlight */
+  --color-deep-saffron:     #FF9932; /* Gradient pair / hover states */
+  --color-nocturnal-exp:    #114C5A; /* Dark primary text / section backgrounds */
+  --color-oceanic-noir:     #172B36; /* Deepest background / footer */
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Map palette custom variables */
+  --color-arctic-powder: var(--color-arctic-powder);
+  --color-mystic-mint: var(--color-mystic-mint);
+  --color-forsythia: var(--color-forsythia);
+  --color-deep-saffron: var(--color-deep-saffron);
+  --color-nocturnal-exp: var(--color-nocturnal-exp);
+  --color-oceanic-noir: var(--color-oceanic-noir);
+}
+
+/* Custom transitions and animation classes based on constraints */
+.transition-hover {
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.transition-toggle {
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.transition-accordion {
+  transition: max-height 350ms ease-in-out, opacity 350ms ease-in-out;
+}
+
+.transition-layout {
+  transition: all 350ms ease-in-out;
+}
+
+/* Page load sequence animation (must complete within 500ms) */
+@keyframes fadeUpEntry {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-entry {
+  animation: fadeUpEntry 450ms cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+/* Stagger delay classes so the total animation sequence completes by 500ms */
+.delay-100 {
+  animation-delay: 50ms;
+}
+.delay-200 {
+  animation-delay: 100ms;
+}
+.delay-300 {
+  animation-delay: 150ms;
+}
+
+/* Basic structural defaults */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-arctic-powder);
+  color: var(--color-nocturnal-exp);
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography styles matching tokens */
+.font-display-lg {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.font-display-lg-mobile {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.font-headline-md {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.font-headline-sm {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.font-body-lg {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.font-body-md {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.font-label-caps {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.font-code-snippet {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Inline animation classes for extra flavor */
+.animate-spin-slow {
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
