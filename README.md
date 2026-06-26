@@ -154,5 +154,3 @@ npm run dev
 └── README.md
 ```
 
-| Motion accuracy | 5 |
-| **Total** | **100** |
